@@ -17,8 +17,9 @@ const initApp = () => {
   // Handle year in copyright
 
   const currentYear = new Date().getFullYear()
-  const yearEl = document.getElementById('year')
-  yearEl.innerText = currentYear
+  const yearEl = document.getElementsByClassName('year')
+  yearEl[0].innerText = currentYear
+  yearEl[1].innerText = currentYear
 
   // Handle submitting form
 
